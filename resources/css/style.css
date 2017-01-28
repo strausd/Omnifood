@@ -133,6 +133,7 @@ a:link, a:visited {
 	text-decoration: none;
 	padding: 1px;
 	border-bottom: 1px solid #e67e22;
+	-webkit-transition: color .2s, border-bottom .2s;
 	transition: color .2s, border-bottom .2s;
 }
 
@@ -149,6 +150,7 @@ a:hover, a:active {
 	font-weight: 300;
 	text-decoration: none;
 	border-radius: 50px;
+	-webkit-transition: background-color .2s, border .2s, color .2s;
 	transition: background-color .2s, border .2s, color .2s;
 }
 
@@ -184,6 +186,7 @@ a:hover, a:active {
 /* --------------------------------------- */
 
 header {
+	background-image: -webkit-linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(img/hero.jpg);
 	background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(img/hero.jpg);
 	background-size: cover;
 	background-position: center;
@@ -196,7 +199,8 @@ header {
 	width: 1140px;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -233,6 +237,7 @@ header {
 	text-transform: uppercase;
 	font-size: 90%;
 	border-bottom: 2px solid transparent;
+	-webkit-transition: border-bottom .2s;
 	transition: border-bottom .2s;
 }
 
@@ -320,13 +325,18 @@ header {
 .meal-photo img {
 	opacity: 0.7;
 	width: 100%;
-	transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	        transform: scale(1.15);
 	-webkit-backface-visibility: hidden;
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, -webkit-transform 0.5s;
 	transition: transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .meal-photo img:hover {
-	transform: scale(1);
+	-webkit-transform: scale(1);
+	        transform: scale(1);
 	opacity: 1;
 }
 
@@ -410,6 +420,7 @@ header {
 /* --------------------------------------- */
 
 .section-testimonials {
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/back-customers.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/back-customers.jpg);
 	background-size: cover;
 	color: #fff;
@@ -613,6 +624,7 @@ footer {
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram {
+	-webkit-transition: color .2s;
 	transition: color .2s;
 }
 
@@ -651,11 +663,13 @@ footer p {
 
 .js--wp-1, .js--wp-2, .js--wp-3 {
 	opacity: 0;
-	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
 }
 
 .js--wp-4 {
-	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
 }
 
 .js--wp-1.animated, .js--wp-2.animated, .js--wp-3.animated {
